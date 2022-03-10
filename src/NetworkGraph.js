@@ -4,22 +4,13 @@ import data from "./data.json";
 
 const options = {
     autoResize: true, height: '100%', width: '100%', locale: 'en',
-
     groups: {
-        usergroups: {
-            shape: "icon", icon: {
+        users: {
+            shape: "icon",
+            icon: {
                 face: "'FontAwesome'",
-                code: "\uf0c0",
-                weight: "bold",
-                size: 18,
-                color: "#57169a",
-            },
-        }, users: {
-            shape: "icon", icon: {
-                face: "'FontAwesome'",
-                code: '\uf007',
-                weight: "bold",
-                size: 18,
+                code: "\uf007",
+                size: 50,
                 color: "#aa00ff",
             },
         },
@@ -28,7 +19,7 @@ const options = {
     layout: {
         hierarchical: false
     }, edges: {
-        width: 3, smooth: {
+        width: 2, smooth: {
             enabled: true, type: "dynamic", roundness: 1
         }, arrows: {
             from: {
@@ -37,16 +28,18 @@ const options = {
                 enabled: true
             }
         }
-    }, nodes: {
+    },
+    nodes: {
         shape: "circle",
         font: {
-            color: "red",
+            color: "#0c36d5",
             size: 20
         },
         margin: {
             top: 10, bottom: 10, left: 10, right: 10
         }, mass: 1
-    }, interaction: {
+    },
+    interaction: {
         dragNodes: true,
         dragView: true,
         hideEdgesOnDrag: false,
