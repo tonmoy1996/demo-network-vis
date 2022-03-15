@@ -19,7 +19,9 @@ const options = {
     layout: {
         hierarchical: false
     }, edges: {
-        width: 2, smooth: {
+        width: 2,
+        size: 50,
+        smooth: {
             enabled: true, type: "dynamic", roundness: 1
         }, arrows: {
             from: {
